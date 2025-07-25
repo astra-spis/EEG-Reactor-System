@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EEGView
+  m_Shader: {fileID: 4800000, guid: 7acc8647a3270fb4c9d6f9541c996aa0, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    QUEUE: Transparent
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Buffer:
+        m_Texture: {fileID: 8400000, guid: 272bfe062d68252429f774ddd706b14d, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FontTex:
+        m_Texture: {fileID: 2800000, guid: e002332f907d35843be226e2305a97c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BFI_Addons_HueShift: 0
+    - _BFI_Biometrics_BreathsPerMinute: 0
+    - _BFI_Biometrics_BreathsPerSecond: 0
+    - _BFI_Biometrics_HeartBeatsPerMinute: 0
+    - _BFI_Biometrics_HeartBeatsPerSecond: 0
+    - _BFI_Biometrics_OxygenPercent: 0
+    - _BFI_Biometrics_Supported: 0
+    - _BFI_Info_BatteryLevel: 0
+    - _BFI_Info_BatterySupported: 0
+    - _BFI_Info_DeviceConnected: 0
+    - _BFI_Info_SecondsSinceLastUpdate: 0
+    - _BFI_Info_VersionMajor: 0
+    - _BFI_Info_VersionMinor: 0
+    - _BFI_NeuroFB_FocusAvg: 0
+    - _BFI_NeuroFB_FocusAvgPos: 0
+    - _BFI_NeuroFB_FocusLeft: 0
+    - _BFI_NeuroFB_FocusLeftPos: 0
+    - _BFI_NeuroFB_FocusRight: 0
+    - _BFI_NeuroFB_FocusRightPos: 0
+    - _BFI_NeuroFB_RelaxAvg: 0
+    - _BFI_NeuroFB_RelaxAvgPos: 0
+    - _BFI_NeuroFB_RelaxLeft: 0
+    - _BFI_NeuroFB_RelaxLeftPos: 0
+    - _BFI_NeuroFB_RelaxRight: 0
+    - _BFI_NeuroFB_RelaxRightPos: 0
+    - _BFI_PwrBands_Avg_Alpha: 1
+    - _BFI_PwrBands_Avg_Beta: 1
+    - _BFI_PwrBands_Avg_Delta: 1
+    - _BFI_PwrBands_Avg_Gamma: 1
+    - _BFI_PwrBands_Avg_Theta: 1
+    - _BFI_PwrBands_Left_Alpha: 1
+    - _BFI_PwrBands_Left_Beta: 1
+    - _BFI_PwrBands_Left_Delta: 1
+    - _BFI_PwrBands_Left_Gamma: 1
+    - _BFI_PwrBands_Left_Theta: 1
+    - _BFI_PwrBands_Right_Alpha: 1
+    - _BFI_PwrBands_Right_Beta: 1
+    - _BFI_PwrBands_Right_Delta: 1
+    - _BFI_PwrBands_Right_Gamma: 1
+    - _BFI_PwrBands_Right_Theta: 1
+    - _DebugMode: 0
+    - _DebugSwitch: 0
+    - _DebugType: 0
+    - _DisplayHeight: 32
+    - _DisplayWidth: 32
+    - _FontTexHeight: 60
+    - _FontTexWidth: 60
+    - _FrameRate: 30
+    - _GraphEnabled: 1
+    - _GraphStyle: 1
+    - _InitializeBuffer: 0
+    - _IsActiveReset: 0
+    - _LastActiveTime: 0
+    - _TextAreaWidth: 0.5
+    - _TextEnabled: 1
+    - _TextScale: 1
+    m_Colors:
+    - _BackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TextColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
