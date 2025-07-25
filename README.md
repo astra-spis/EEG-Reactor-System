@@ -6,13 +6,17 @@ Unity用のEEG（脳波）データ可視化・フィードバックシステム
 
 EEG Reactor Systemは、BrainFlowなどのEEGデバイスから取得した脳波データをUnity内でリアルタイムに可視化し、VRChatアバターとの連携を可能にするシステムです。
 
-このシステムはBOOTHで販売されている[【VRChat OSC】EEG Reactor【脳波デバイス Muse2対応】](https://spis.booth.pm/items/7056584)の中核システムとして組み込まれており、[BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)のパラメータ仕様を完全に踏襲しています。
+このシステムはBOOTHで販売されている[【VRChat OSC】EEG Reactor【脳波デバイス Muse2対応】](https://spis.booth.pm/items/7056584)の中核システムとして組み込まれており、[BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)のパラメータ仕様を踏襲しています。
 
-### BrainFlowsIntoVRChatとの関係
+## 関連プロジェクト
 
-- **仕様の完全踏襲**: [BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)で定義されたBFI（BrainFlowsIntoVRChat）パラメータに対応
-- **システム的疎結合**: BrainFlowsIntoVRChatはPythonベースでVRChatへのOSC送信までを担当し、本システムはUnity側での可視化・フィードバックを担当するため、Forkではなく独立したシステムとして開発
-- **相互補完**: BrainFlowsIntoVRChatのデータ出力を本システムで受信し、Unity内での高度な可視化とVRChatアバター連携を実現
+### BrainFlowsIntoVRChat
+- **リポジトリ**: [ChilloutCharles/BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)
+- **役割**: PythonベースのEEGデータ処理とVRChatへのOSC送信
+- **ライセンス**: MIT License
+- **関係**: 本システムのデータ仕様の基盤となっているプロジェクト
+   - **仕様踏襲**: [BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)で定義されたBFI（BrainFlowsIntoVRChat）パラメータに対応
+   - **可視化表示**: BrainFlowsIntoVRChatのOSC出力データを本システムで受信し、Unity内での可視化とVRChatアバター連携を実現
 
 ## 機能
 
@@ -21,7 +25,7 @@ EEG Reactor Systemは、BrainFlowなどのEEGデバイスから取得した脳�
 - **生体情報表示**: 心拍数、呼吸数、血中酸素濃度などの生体情報表示
 - **VRChat連携**: OSCプロトコルを使用したVRChatアバターとのリアルタイム連携
 - **テキスト表示**: カスタムフォントを使用した数値・テキスト表示
-- **デバッグ機能**: グラフモニターパネルによる詳細なデバッグ情報表示
+- **デバッグ機能**: グラフなどのデバッグ情報表示
 
 ## システム構成
 
@@ -74,7 +78,7 @@ HLSLシェーダー用のデータ型定義とバッファ処理
 
 ### BrainFlowsIntoVRChat (BFI) パラメータ
 
-本システムは[BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)で定義された全てのパラメータに対応しています。
+本システムは[BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)で定義されたパラメータに対応しています。
 
 #### 情報パラメータ
 - `BFI_Info_VersionMajor/Minor`: バージョン情報
@@ -109,8 +113,8 @@ HLSLシェーダー用のデータ型定義とバッファ処理
 ### 前提条件
 
 1. [BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)のセットアップと実行
-2. Unity 2021.3 LTS以上
-3. VRChat SDK3
+2. Unity 2022.3.22f1 以上
+3. VRChat SDK - Avatars 3.8.1 以上
 
 ### 1. 基本セットアップ
 
@@ -140,30 +144,6 @@ HLSLシェーダー用のデータ型定義とバッファ処理
 #### フォントカスタマイズ
 - `123font.png`を60x60ピクセルの12x4グリッド形式で作成
 - 文字コードに応じて配置
-
-## 技術仕様
-
-### 対応Unityバージョン
-- Unity 2021.3 LTS以上推奨
-- URP/HDRP対応
-
-### シェーダー要件
-- HLSL 3.0以上
-- テクスチャサポート
-- レンダーテクスチャ対応
-
-### OSC通信仕様
-- プロトコル: UDP
-- デフォルトポート: 9000
-- エンコーディング: UTF-8
-
-## 関連プロジェクト
-
-### BrainFlowsIntoVRChat
-- **リポジトリ**: [ChilloutCharles/BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)
-- **役割**: PythonベースのEEGデータ処理とVRChatへのOSC送信
-- **ライセンス**: MIT License
-- **関係**: 本システムのデータ仕様の基盤となっているプロジェクト
 
 ## ライセンス
 
