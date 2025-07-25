@@ -6,7 +6,7 @@ Unity用のEEG（脳波）データ可視化・フィードバックシステム
 
 EEG Reactor Systemは、BrainFlowなどのEEGデバイスから取得した脳波データをUnity内でリアルタイムに可視化し、VRChatアバターとの連携を可能にするシステムです。
 
-このシステムは[BOOTHで販売されている「Sio Avatar v1」](https://spis.booth.pm/items/7056584)の中核システムとして組み込まれており、[BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)のパラメータ仕様を完全に踏襲しています。
+このシステムは[BOOTHで販売されている「【VRChat OSC】EEG Reactor【脳波デバイス Muse2対応】](https://spis.booth.pm/items/7056584)の中核システムとして組み込まれており、[BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)のパラメータ仕様を完全に踏襲しています。
 
 ### BrainFlowsIntoVRChatとの関係
 
