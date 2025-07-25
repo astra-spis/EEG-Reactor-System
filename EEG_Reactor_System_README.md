@@ -10,7 +10,7 @@ EEG Reactor Systemは、BrainFlowなどのEEGデバイスから取得した脳�
 
 ### BrainFlowsIntoVRChatとの関係
 
-- **仕様の完全踏襲**: [BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)で定義された全てのBFI（BrainFlowsIntoVRChat）パラメータに対応
+- **仕様の完全踏襲**: [BrainFlowsIntoVRChat](https://github.com/ChilloutCharles/BrainFlowsIntoVRChat)で定義されたBFI（BrainFlowsIntoVRChat）パラメータに対応
 - **システム的疎結合**: BrainFlowsIntoVRChatはPythonベースでVRChatへのOSC送信までを担当し、本システムはUnity側での可視化・フィードバックを担当するため、Forkではなく独立したシステムとして開発
 - **相互補完**: BrainFlowsIntoVRChatのデータ出力を本システムで受信し、Unity内での高度な可視化とVRChatアバター連携を実現
 
